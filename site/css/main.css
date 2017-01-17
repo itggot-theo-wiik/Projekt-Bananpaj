@@ -1,5 +1,18 @@
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+      * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
 body {
-    background-color: darkslategrey;
+    /*background-color: darkslategrey;*/
+    padding: 0;
+    margin: 0;
     
 }
 
@@ -8,17 +21,82 @@ body {
     
 }
 
-.header {
-    background-color: 
+h1, h2, h3, p, a, li {
+    font-family: 'Lato', sans-serif;
     
 }
 
-.main {
+h1 {
+    font-size: 13em;
     
+}
+
+h3 {
+    font-size: 10em;
+    
+}
+
+.header {
+    background-color: lightslategray;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+}
+
+.nav {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+.main {
+    background-color: antiquewhite;
+    padding: 40px;
     
 }
 
 .footer {
+    background-color: firebrick;
+    color: white;
+    background-color: darkslategray;
+    padding: 20px;
+}
+
+.navi {
+    width: 33%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
     
+}
+.paragraph{
+    margin-top: 40px;
+}
+
+.helenas {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.photo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
     
+}
+
+li {
+    margin-left: 120px;
+    list-style-type: none;
+    
+}
+      
 }
