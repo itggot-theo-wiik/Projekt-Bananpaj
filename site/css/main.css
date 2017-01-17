@@ -1,9 +1,4 @@
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-      * {
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -98,5 +93,10 @@ li {
     list-style-type: none;
     
 }
-      
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
 }
