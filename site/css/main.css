@@ -55,10 +55,8 @@ h3 {
 }
 
 .footer {
-    background-color: firebrick;
     color: white;
     background-color: darkslategray;
-    padding: 20px;
 }
 
 .navi {
@@ -99,9 +97,13 @@ li {
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+      
+    .footer {
+    padding: 10px;
+      }
+
 
 }
-
 /* ----------- Non-Retina Screens ----------- */
 @media screen 
   and (min-device-width: 1200px) 
