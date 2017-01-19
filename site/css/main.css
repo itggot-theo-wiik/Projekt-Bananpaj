@@ -8,12 +8,15 @@ body {
     /*background-color: darkslategrey;*/
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .container {
-    
-    
+
 }
 
 h1, h2, h3, p, a, li {
@@ -22,20 +25,21 @@ h1, h2, h3, p, a, li {
 }
 
 h1 {
-    font-size: 13em;
+     font-size: 6em;
     
 }
 
 h3 {
-    font-size: 10em;
+    font-size: 3em;
     
 }
 
 .header {
     background-color: lightslategray;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    
     
 }
 
@@ -45,7 +49,8 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    font-size: 2em;
+    height: 50px;
 }
 
 .main {
@@ -57,6 +62,7 @@ h3 {
 .footer {
     color: white;
     background-color: darkslategray;
+    padding: 25px;
 }
 
 .navi {
@@ -85,6 +91,10 @@ h3 {
     align-items: center;
     
 }
+.test {
+    display: flex;
+    flex-direction: column;
+}
 
 li {
     margin-left: 120px;
@@ -92,29 +102,101 @@ li {
     
 }
 
-/* ----------- iPhone 5 ----------- */
+/*
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
-      
+
+
+}
+*/
+
+/* ----------- iPhone 5 ----------- */
+
+@media only screen 
+  and (max-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
     .footer {
     padding: 10px;
+        
+      }
+      
+      .container {
+          width: 320px;
+          
+      }
+      
+      h1 {
+          font-size: 13em;
+      }
+      
+      h3{
+          font-size: 10em;
       }
 
+      .header {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+
+      }
+      
+      .nav {
+          font-size: 6em;
+          height: auto;
+      }
+      
+      .main {
+          background-color: deeppink;
+          
+      }
+}
+
+/* ----------- MELLAN ----------- */
+
+@media only screen 
+  and (min-width: 321px) 
+  and (max-width: 1220px) {
+      
+      .container {
+          width: 80vw;
+          
+      }
+      
+      .main {
+          background-color: aqua;
+          
+      }
 
 }
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
 
-.header {
+/* ----------- STOOR ----------- */
 
-    width: 100%;
-    height: 35%;
-    
-}
+@media only screen 
+  and (min-width: 1221px) 
+  and (max-width: 2000px) {
+      
+      .container {
+          width: 750px;
+          
+      }
+      
+      .main {
+          background-color: green;
+          
+      }
+      
+      .test {
+          flex-direction: row;
+          
+      }
+      
+      .helenas {
+          width: 200px;
+          height: auto;
+          
+      }
 
 }
